@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.conteiner_conteiner_ex19{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divprinc{
+    background-color: white;
+    width: 90vw;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-flow: column;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: width .5s ease
+}
+
+#ano{
+    transform: translateY(-7%);
+    padding: 8px 10px;
+    width: 200px;
+    background-color: lightblue;
+    border: 1px solid rgb(13, 104, 161);
+    border-radius: 15px;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#ano::placeholder{
+    color: white;
+}
+
+#ano:focus{
+    background-color: rgb(19, 80, 100);
+    transition: background-color 1s ease;
+}
+
+p{
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+.conteiner_resultado{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    flex-flow: row nowrap;
+    transition: width .3s ease
+}
+
+#res{
+    font-size: 20px;
+}
+
+#f, #m{
+    margin-left: 10px;
+    background-color: lightblue;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#verificador{
+    padding: 7px 30px;
+    margin-left: 10px;
+    background-color: lightblue;
+    border: 1px solid rgb(13, 104, 161);
+    border-radius: 15px;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#verificador:hover{
+    background-color:  rgb(19, 80, 100);
+    transition: background-color .5s ease;
+}
+
+.conteiner_da_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    transition: width .5s ease
+}
+
+#img{
+    display: none;
+    background-image: url(img/homem-criança.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 400px) {
+    #ano{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    
+    #divprinc{
+        width: 70vw;
+    }
+
+    .conteiner_resultado{
+        width: 70vw;
+    }
+
+    .conteiner_da_img{
+        width: 70vw;
+        
+    }
+
+    p{
+        font-size: 1.1em;
+    }
+}
